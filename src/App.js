@@ -50,7 +50,7 @@ class App extends React.Component {
     const moves = history.map((step, move) => {
       const desc = move ?
         'Позиция #' + move :
-        'Начать игру';
+        'Сначала';
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
